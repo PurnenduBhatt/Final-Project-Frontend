@@ -1,0 +1,99 @@
+/* Dashboard container styling */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background: linear-gradient(135deg, #6a11cb, hsl(218, 95%, 76%)); /* Bold gradient background */
+    min-height: 100vh;
+    margin: 0;
+    color: #f1f1f1; /* Light text color for contrast */
+  }
+  
+  /* Heading styling */
+  .dashboard-container h1 {
+    font-size: 48px;
+    color: #ffffff; /* White text */
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+    font-weight: bold; /* Bold header */
+  }
+  
+  /* Button styling */
+  .dashboard-container button {
+    margin: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #ff6f61; /* Coral pink */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Button hover effect */
+  .dashboard-container button:hover {
+    background-color: #ff3b30; /* Brighter pink */
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Button focus effect */
+  .dashboard-container button:focus {
+    box-shadow: 0 0 10px rgba(255, 111, 97, 0.8); /* Coral glow */
+  }
+  
+  /* Add a subtle pulse animation to buttons */
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 10px rgba(255, 111, 97, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(255, 111, 97, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(255, 111, 97, 0.8);
+    }
+  }
+  
+  /* Pulse animation when hovering */
+  .dashboard-container button:hover {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 20px;
+    }
+  
+    .dashboard-container h1 {
+      font-size: 36px;
+    }
+  
+    .dashboard-container button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-container {
+      padding: 15px;
+    }
+  
+    .dashboard-container h1 {
+      font-size: 28px;
+    }
+  
+    .dashboard-container button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

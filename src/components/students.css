@@ -1,0 +1,114 @@
+/* Students.css */
+
+/* General Container Styling */
+.students-container {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #e3f2fd, #bbdefb); /* Light blue gradient */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title */
+  h1 {
+    text-align: center;
+    color: #1e88e5; /* Blue color */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .students-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .students-form label {
+    font-size: 1rem;
+    color: #1e88e5;
+    margin-right: 10px;
+  }
+  
+  .course-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #64b5f6;
+    border-radius: 5px;
+    margin-right: 10px;
+    outline: none;
+    width: 300px;
+  }
+  
+  .course-input:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 8px rgba(30, 136, 229, 0.5);
+  }
+  
+  .submit-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #1565c0;
+  }
+  
+  /* Error Message */
+  .error-message {
+    color: #e53935;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  /* Students List */
+  .students-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Student Card */
+  .student-card {
+    background-color: white;
+    border-left: 6px solid #1e88e5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .student-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #424242; /* Dark gray */
+  }
+  
+  .student-card p strong {
+    color: #1e88e5; /* Highlighted blue text */
+  }
+  
+  /* No Students Message */
+  .no-students {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #424242;
+    margin-top: 20px;
+  }
+  
